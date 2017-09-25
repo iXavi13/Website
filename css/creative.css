@@ -151,7 +151,8 @@ body {
       }
       #mainNav .navbar-nav > li.nav-item > a.nav-link,
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-        color: white; }
+        color: white;
+      }
         #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
         #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
           color: #E52232;
@@ -171,12 +172,21 @@ body {
       }
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
-          color: #222222; 
+          color: #222222;
       }
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
             color: #E52232; 
-      } }
+      } 
+      .hide{
+    display:none;
+}
+}
+
+.img-fluid{
+    height:350px;
+    width:650px;
+}
 
 header.masthead {
   position: relative;
@@ -290,7 +300,7 @@ color: white;
         font-size: 12px;
       }
       .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-description{
-          padding-top: 40px;
+          padding-top: 10px;
         color: white;
         font-size: 14px;
       }
@@ -303,7 +313,10 @@ color: white;
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
       font-size: 16px; }
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-      font-size: 22px; } }
+      font-size: 22px; } 
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-description{
+          padding-top: 40px;
+      }}
 
 .call-to-action {
   padding: 50px 0; }
@@ -316,6 +329,9 @@ color: white;
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0; }
+
+.form-group{
+}
 
 section#contact .form-group textarea.form-control{
     resize: none;
@@ -404,3 +420,9 @@ section#contact .form-group textarea.form-control{
 
 .btn-xl {
   padding: 15px 30px; }
+
+@media (max-width: 768px){
+    .project-description{
+        padding-top:0;
+    }
+}

@@ -83,5 +83,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 })(jQuery);
 
+$(document).ready(function(){
+    var change = $('.form-group').height()*3 + 22;
+    $('#message').height(change); 
+
+});
 
 // End of use strict
